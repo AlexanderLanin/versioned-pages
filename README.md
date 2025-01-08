@@ -1,5 +1,7 @@
 # versioned-pages
 
+:warning: This action is NOT in development and NOT working. :warning:
+
 ## What is it?
 
 You are working on a project and you have a documentation site. You want to keep

@@ -1,5 +1,4 @@
 {
-  "name": "GitHub Actions (JavaScript)",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "postCreateCommand": "npm install",
   "customizations": {
@@ -20,15 +19,7 @@
         "redhat.vscode-yaml",
         "rvest.vs-code-prettier-eslint",
         "yzhang.markdown-all-in-one"
-      ],
-      "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2,
-        "editor.formatOnSave": true,
-        "markdown.extension.list.indentationSize": "adaptive",
-        "markdown.extension.italic.indicator": "_",
-        "markdown.extension.orderedList.marker": "one"
-      }
+      ]
     }
   },
   "remoteEnv": {

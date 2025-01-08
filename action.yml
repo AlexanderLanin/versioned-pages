@@ -1,19 +1,21 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: Deploy Versioned Pages
+description: |
+  Push documentation to the gh-pages branch with versioned URLs or clean up on deletion.
 
-# Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  documentation_folder:
+    description: "Path to the HTML files to deploy."
     required: true
-    default: '1000'
+  versions_file:
+    description: "Path to the versions file on the gh-pages branch."
+    default: "versions"
 
-# Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  performed_action:
+    description: "The action performed (deploy or delete)."
+  target_folder:
+    description: "The target folder for the documentation."
 
 runs:
-  using: node20
-  main: dist/index.js
+  using: "node20"
+  main: "index.js"
